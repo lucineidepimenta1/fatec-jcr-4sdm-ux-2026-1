@@ -1,9 +1,9 @@
 # Portfólio – Experiência do Usuário – 2026/1
 
 ## 👤 Aluno
-Nome:
-LinkedIn:
-GitHub:
+- Nome:
+- LinkedIn:
+- GitHub:
 
 ---
 
