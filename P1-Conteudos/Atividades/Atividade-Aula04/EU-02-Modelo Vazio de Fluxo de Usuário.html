@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Modelo Vazio de Fluxo de Usuário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    .flow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .step {
+      background: #ffffff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: 2px dashed #888;
+      min-width: 250px;
+      text-align: center;
+      font-weight: bold;
+      color: #555;
+    }
+    .arrow {
+      font-size: 20px;
+      color: #888;
+    }
+    .decision {
+      background: #fdfdfd;
+      border: 2px dashed #ff9800;
+    }
+    .branch {
+      display: flex;
+      gap: 40px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📌 Modelo Vazio de Fluxo de Usuário</h1>
+
+  <h2>Fluxo Linear (Exemplo para Preenchimento)</h2>
+  <div class="flow">
+    <div class="step">[Início]</div>
+    <div class="arrow">↓</div>
+    <div class="step">[Etapa 1]</div>
+    <div class="arrow">↓</div>
+    <div class="step">[Etapa 2]</div>
+    <div class="arrow">↓</div>
+    <div class="step">[Etapa 3]</div>
+    <div class="arrow">↓</div>
+    <div class="step">[Fim]</div>
+  </div>
+
+  <h2>Fluxo com Decisão (Exemplo para Preenchimento)</h2>
+  <div class="flow">
+    <div class="step">[Início]</div>
+    <div class="arrow">↓</div>
+    <div class="step">[Etapa inicial]</div>
+    <div class="arrow">↓</div>
+    <div class="step decision">[Decisão: Condição?]</div>
+    <div class="branch">
+      <div class="flow">
+        <div class="step">[Caminho A]</div>
+        <div class="arrow">↓</div>
+        <div class="step">[Resultado A]</div>
+        <div class="arrow">↓</div>
+        <div class="step">[Fim A]</div>
+      </div>
+      <div class="flow">
+        <div class="step">[Caminho B]</div>
+        <div class="arrow">↓</div>
+        <div class="step">[Resultado B]</div>
+        <div class="arrow">↓</div>
+        <div class="step">[Fim B]</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
